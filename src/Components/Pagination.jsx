@@ -40,8 +40,8 @@ const Pagination = () => {
         {[...Array(products.length / 10)].map((_, i) => {
           return (
             <div
-              className={`hover:cursor-pointer border-2 border-white text-white  p-2  ${
-                page === i + 1 ? " bg-white text-black" : ""
+              className={`hover:cursor-pointer border-2 border-white   p-2  ${
+                page === i + 1 ? " text-black bg-white " : ""
               }`}
               onClick={() => {
                 setPage(i + 1);
